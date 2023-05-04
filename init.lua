@@ -1,0 +1,17 @@
+require("core.keymaps")
+require("core.options")
+require("core.colorscheme")
+require("lazy-config")
+
+-- Plugins
+require("plugins.whichkey-config")
+require("plugins.bufferline-config")
+require("plugins.lualine-config")
+require("plugins.nvim-tree-config")
+require("plugins.telescope-config")
+require("plugins.alpha-config")
+require("plugins.treesitter-config")
+require("plugins.lsp-config")
+require("plugins.navbuddy-config")
+require("plugins.transparent-config")
+require("plugins.autoclose-config")
