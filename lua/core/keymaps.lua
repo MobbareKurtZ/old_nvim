@@ -47,3 +47,13 @@ km.set("n", "H", "<cmd>BufferLineCyclePrev<cr>")
 
 -- nabla
 km.set("n", "<leader>o", "<cmd>lua require('nabla').popup()<cr>")
+
+-- magma
+--km.set("n", "<leader>j", "<cmd>MagmaEvaluateOperator<cr>")
+--km.set("n", "<leader>jl", "<cmd>MagmaEvaluateLine<cr>")
+--km.set("v", "<leader>j", "<cmd>MagmaEvaluateVisual<cr>")
+--km.set("n", "<leader>jc", "<cmd>MagmaReevaluateCell<cr>")
+--km.set("n", "<leader>jd", "<cmd>MagmaDelete<cr>")
+--km.set("n", "<leader>jo", "<cmd>MagmaShowOutput<cr>")
+
+

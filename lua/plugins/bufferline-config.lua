@@ -7,8 +7,8 @@ require("bufferline").setup{
             delay = 150,
             reveal = {'close'}
         },
-        close_icon = '',
-        separator_style = "slope",
+        close_icon = 'x',
+        -- separator_style = "",
         offsets = {{filetype = "NvimTree", text = "", padding = 1}},
     }
 }

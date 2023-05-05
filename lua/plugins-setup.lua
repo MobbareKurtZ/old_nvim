@@ -89,6 +89,11 @@ return {
     },
 
     {
+        "dccsillag/magma-nvim",
+        build = ':UpdateRemotePlugins',
+    },
+
+    {
         "akinsho/bufferline.nvim",
         dependencies = 'nvim-tree/nvim-web-devicons',
     },
