@@ -1,4 +1,11 @@
 return {
+    {
+        "L3MON4D3/LuaSnip",
+        version = "<CurrentMajor>.*",
+        build = "make install_jsregexp",
+        dependencies = { "rafamadriz/friendly-snippets" },
+    },
+
     -- Language Support
     -- Added this plugin.
     {
@@ -110,6 +117,6 @@ return {
         dependencies = {
             {'nvim-lua/plenary.nvim'},
         }
-    }
+    },
 
 }

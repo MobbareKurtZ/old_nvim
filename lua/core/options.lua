@@ -10,7 +10,7 @@ opt.shiftwidth = 4
 opt.expandtab = true
 
 -- cursor line
-opt.cursorline = true
+-- opt.cursorline = true
 
 -- search settings
 opt.ignorecase = true
@@ -62,3 +62,5 @@ opt.winminwidth = 5 -- Minimum window width
 
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
+
+

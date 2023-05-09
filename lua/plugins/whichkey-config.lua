@@ -88,8 +88,9 @@ local mappings = {
     ["r"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Reformat Code" },
 
     l = {
-        name = "LSP",
+        name = "LSP/Latex",
         a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
+        c = { "<cmd>VimtexCompile<cr>", "Compile Latex" },
         i = { "<cmd>LspInfo<cr>", "Info" },
         l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
         r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
