@@ -92,6 +92,16 @@ return {
     },
 
     {
+        "nvim-neo-tree/neo-tree.nvim",
+        version = "v2.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+        }
+    },
+
+    {
         "folke/tokyonight.nvim",
     },
 
@@ -109,6 +119,14 @@ return {
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+
+    {
+        'AckslD/nvim-neoclip.lua',
+        lazy = true,
+        config = function ()
+            require('neoclip').setup()
+        end,
     },
 
     {

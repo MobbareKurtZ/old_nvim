@@ -20,26 +20,31 @@ km.set("n", "<leader>wv", "<C-w>v")
 km.set("n", "<leader>we", '<C-w>="')
 km.set("n", "<leader>wq", ":close<CR>")
 
-km.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
+km.set("n", "<leader>to", ":tabnew<CR>")   -- open new tab
 km.set("n", "<leader>tq", ":tabclose<CR>") -- close current tab
-km.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
-km.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
+km.set("n", "<leader>tn", ":tabn<CR>")     --  go to next tab
+km.set("n", "<leader>tp", ":tabp<CR>")     --  go to previous tab
 
 
 -- plugins
 
+-- neotree
+km.set("n", "<leader>e", ":Neotree toggle<CR>")
+km.set("n", "<leader>fe", ":Neotree focus<CR>")
+km.set("n", "<leader>gs", ":Neotree float git_status<CR>")
+
 -- nvimtree
-km.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+--km.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- telescope
-km.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
-km.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
+km.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")  -- find files within current working directory, respects .gitignore
+km.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")   -- find string in current working directory as you type
 km.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
-km.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
-km.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+km.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")     -- list open buffers in current neovim instance
+km.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")   -- list available help tags
 
 -- Vimtex
-km.set("n","<leader>lc", "<cmd>VimtexCompile<cr>")
+km.set("n", "<leader>lc", "<cmd>VimtexCompile<cr>")
 
 -- bufferline
 km.set("n", "L", "<cmd>BufferLineCycleNext<cr>")
@@ -59,7 +64,7 @@ km.set("n", "<leader>o", "<cmd>lua require('nabla').popup()<cr>")
 -- luasnip
 vim.cmd([[
     " Expand or jump in insert mode
-    imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
+    imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'
 
     " Jump forward through tabstops in visual mode
     smap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'
