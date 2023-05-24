@@ -1,4 +1,3 @@
-vim.opt.termguicolors = true
 
 require("bufferline").setup{
     options = {
@@ -9,6 +8,6 @@ require("bufferline").setup{
         },
         close_icon = 'x',
         -- separator_style = "",
-        offsets = {{filetype = "NvimTree", text = "", padding = 1}},
+        offsets = {{filetype = "Neotree", text = "", padding = 1}},
     }
 }

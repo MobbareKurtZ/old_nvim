@@ -51,17 +51,15 @@ return {
     },
 
     {
+        "nvim-tree/nvim-web-devicons"
+    },
+
+    {
         "nvim-treesitter/nvim-treesitter"
     },
 
     {
         "folke/which-key.nvim"
-    },
-
-    {
-        "nvim-tree/nvim-tree.lua",
-        dependencies = 'nvim-tree/nvim-web-devicons',
-        lazy = true,
     },
 
     {
@@ -99,6 +97,10 @@ return {
             "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
             "MunifTanjim/nui.nvim",
         }
+    },
+
+    {
+        "loctvl842/monokai-pro.nvim",
     },
 
     {
